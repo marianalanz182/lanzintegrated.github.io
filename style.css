@@ -1,101 +1,56 @@
-/* === General page styles === */
+/* Fonts only: keep text black */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Merriweather:wght@400;700&display=swap');
+
+/* Body styling */
 body {
-  font-family: 'Merriweather', serif; /* Paragraph text */
-  color: #000;                         /* All text black */
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f7f7f7;           /* Light background for contrast */
-}
-
-/* === Navbar === */
-.site-header {
-  border-bottom: 1px solid #ccc;       /* Subtle line below navbar */
-  padding: 1rem 2rem;
-  background-color: #fff;
-}
-
-.nav {
-  display: flex;                        /* Horizontal layout */
-  justify-content: space-between;       /* Logo left, links right */
-  align-items: center;                  /* Vertically center */
-}
-
-.nav-links {
-  list-style: none;                     /* Remove bullets */
-  display: flex;                        /* Horizontal layout for links */
-  gap: 2rem;                            /* Space between links */
-}
-
-.nav-links a {
-  text-decoration: none;                /* Remove underline */
-  color: #000;                           /* Black text */
-  font-family: 'Figtree', sans-serif;   /* Heading font for links */
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  color: #d65727;                        /* Orange hover color */
-}
-
-/* Logo image */
-.logo img {
-  height: 50px;                          /* Fits nicely in navbar */
-}
-
-/* === Hero section === */
-.hero-section {
-  display: flex;                         /* Two columns: image + GIF */
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  font-family: 'Merriweather', serif;  /* Primary font for paragraphs */
+  background-color: #f7f7f7;
+  color: #000; /* All text black */
   margin: 40px;
+  line-height: 1.6;
 }
 
-/* Main image container with orange border */
-.hero-image-container {
-  position: relative;                     /* Needed for overlay text */
-  border: 5px solid #d65727;             /* Orange border */
-  border-radius: 10px;
-  overflow: hidden;                       /* Keep overlay and image inside border */
-  flex: 1;                                /* Takes most of the width */
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Figtree', sans-serif; /* Primary font for headings */
+  color: #000; /* Keep headings black */
+  margin-bottom: 20px;
 }
 
-.main-image {
-  width: 100%;                            /* Full container width */
-  display: block;                         /* Removes small gap under image */
+/* Paragraphs */
+p {
+  font-size: 1.2rem;
+  color: #000; /* Keep paragraphs black */
+  margin-bottom: 20px;
 }
 
-/* Text overlay on main image */
-.hero-text {
-  position: absolute;                     /* On top of image */
-  top: 20%;                               /* 20% down from top */
-  left: 10%;                              /* 10% from left */
-  color: #000;                            /* Black text */
-  font-family: 'Figtree', sans-serif;    /* Headings font */
-  font-size: 2rem;                        /* Large heading */
-  font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
-  padding: 0.5rem 1rem;
+/* Links and buttons use brand colors */
+a {
+  text-decoration: none;
+  color: #d65727; /* Orange light for links */
+}
+
+a.btn-primary {
+  display: inline-block;
+  background-color: #d65727; /* Orange light for button */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
   border-radius: 5px;
-}
-
-/* GIF placeholder / container */
-.hero-gif {
-  flex: 0 0 200px;                        /* Fixed width for GIF column */
-}
-
-.gif-placeholder {
-  width: 200px;
-  height: 200px;
-  background-color: #f0f0f0;              /* Light gray placeholder */
-  border: 2px dashed #d65727;             /* Orange dashed border */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #d65727;
   font-family: 'Figtree', sans-serif;
-  font-size: 0.9rem;
-  text-align: center;
-  border-radius: 10px;
+  font-weight: 600;
+}
+
+a.btn-primary:hover {
+
+.hero-section {
+  display: flex;               /* Allows flexible layout if you add other content later */
+  justify-content: center;     /* Centers the image horizontally */
+  padding: 40px 0;             /* Space above and below the image */
+}
+
+.hero-image {
+  width: 50%;                  /* Takes up 50% of the page width */
+  height: auto;                /* Maintains aspect ratio */
+  border: 5px solid #d65727;  /* Optional: orange border */
+  border-radius: 10px;         /* Rounded corners */
 }
