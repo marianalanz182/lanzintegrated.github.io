@@ -1,0 +1,45 @@
+/* Fonts only: keep text black */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Merriweather:wght@400;700&display=swap');
+
+/* Body styling */
+body {
+  font-family: 'Merriweather', serif;  /* Primary font for paragraphs */
+  background-color: #f7f7f7;
+  color: #000; /* All text black */
+  margin: 40px;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-family: 'Figtree', sans-serif; /* Primary font for headings */
+  color: #000; /* Keep headings black */
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+  font-size: 1.2rem;
+  color: #000; /* Keep paragraphs black */
+  margin-bottom: 20px;
+}
+
+/* Links and buttons use brand colors */
+a {
+  text-decoration: none;
+  color: #d65727; /* Orange light for links */
+}
+
+a.btn-primary {
+  display: inline-block;
+  background-color: #d65727; /* Orange light for button */
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+}
+
+a.btn-primary:hover {
+  background-color: #d67522; /* Darker orange on hover */
+}
