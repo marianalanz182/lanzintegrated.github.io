@@ -42,11 +42,13 @@ a.btn-primary {
 
 .hero-section {
   display: flex;
+  align-items: center;
   justify-content: center;
   padding: 40px 0;
 }
 
 .image-frame{
+  flex: 0 0 auto;
   display: inline-block;
   border: 6px solid #d65727;
   border-radius: 20px;
