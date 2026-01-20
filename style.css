@@ -3,10 +3,16 @@
 /* ------------------ */
 
 .section-top {
-  background-color: #c5c6c7;   /* light purple */
-  padding: 100px 20px;
+  background-color: #c5c6c7;   /* light grey */
+  padding: 20px 150px;
   text-align: center;
   color: black;
+  font-family:'Figtree',sans-serif'
+}
+
+.section-top h2 {
+  font-size:3rem;
+  margin:0;
 }
 
 .hero-image-section {      
