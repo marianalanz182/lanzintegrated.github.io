@@ -9,8 +9,7 @@
   color: white;
 }
 
-.hero-image-section {
-  background-color: #fff;       /* white for the image section */
+.hero-image-section {      
   display: flex;
   justify-content: center;
   margin-top: -80px;            /* pulls image upward to overlap top section */
@@ -32,7 +31,7 @@
 .image-frame {
   border: 4px solid #d65727;   /* dark orange border */
   border-radius: 18px;
-  padding: 10px;
+  padding: 0px;
   background-color: #fff;
 }
 
