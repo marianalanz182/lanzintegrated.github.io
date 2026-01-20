@@ -47,15 +47,15 @@ a.btn-primary {
 }
 
 .image-frame{
+  display: inline-block;
   border: 6px solid #d65727;
   border-radius: 20px;
-  padding: 6px;
+  padding: 0px;
 }
 
 .hero-image{
   display: block;
   width: 50%;
-  max-width: 1000px;
   height: auto;
   border-radius: 14px;
 }
