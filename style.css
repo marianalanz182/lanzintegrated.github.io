@@ -1,40 +1,34 @@
-/* --- Reset some defaults --- */
+/* --- Reset defaults --- */
 body {
   margin: 0;
   padding: 0;
-  background-color: #fdf6e3;   /* light neutral background */
+  background-color: #fdf6e3;   /* light background for contrast */
   font-family: 'Figtree', sans-serif;
 }
 
 /* --- Hero Section --- */
 .hero-section {
-  display: flex;                 /* use flex for responsiveness */
-  justify-content: center;       /* center horizontally */
-  align-items: center;           /* center vertically */
+  display: flex;                 /* flex container for centering */
+  justify-content: center;       /* horizontal center */
+  align-items: center;           /* vertical center */
   padding: 40px 0;
 }
 
 /* --- Frame around the image --- */
 .image-frame {
-  flex: 0 0 auto;                /* prevents flex stretching */
-  border: 4px solid #d65727;     /* dark orange border */
-  border-radius: 14px;           /* rounded corners */
-  padding: 0;                    /* optional: can add space inside frame */
+  flex: 0 0 auto;                /* prevent flex stretching */
+  border: 4px solid #d65727;     /* dark orange outer line */
+  border-radius: 16px;           /* rounded corners of frame */
+  padding: 10px;                 /* space between frame and image */
+  box-shadow: 0 0 0 4px #d67522; /* optional inner “shadow” for double-line frame effect */
+  background-color: #fff;        /* optional: makes the frame pop */
 }
 
 /* --- Hero Image --- */
 .hero-image {
-  width: 50vw;                    /* 50% of the viewport width */
+  display: block;
+  width: 50vw;                    /* 50% of viewport width */
   max-width: 500px;               /* caps size on large screens */
   height: auto;                   /* maintain aspect ratio */
-  display: block;
-  border-radius: 10px;            /* rounded corners of the image itself */
+  border-radius: 12px;            /* rounded corners for the image itself */
 }
-
-
-
-
-  
-
-
-
