@@ -1,66 +1,36 @@
-/* Fonts only: keep text black */
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Merriweather:wght@400;700&display=swap');
-
-/* Body styling */
+/* --- Reset some defaults --- */
 body {
-  font-family: 'Merriweather', serif;  /* Primary font for paragraphs */
-  background-color: #f7f7f7;
-  color: #000; /* All text black */
-  margin: 40px;
-  line-height: 1.6;
-}
-
-/* Headings */
-h1, h2, h3 {
-  font-family: 'Figtree', sans-serif; /* Primary font for headings */
-  color: #000; /* Keep headings black */
-  margin-bottom: 20px;
-}
-
-/* Paragraphs */
-p {
-  font-size: 1.2rem;
-  color: #000; /* Keep paragraphs black */
-  margin-bottom: 20px;
-}
-
-/* Links and buttons use brand colors */
-a {
-  text-decoration: none;
-  color: #d65727; /* Orange light for links */
-}
-
-a.btn-primary {
-  display: inline-block;
-  background-color: #d65727; /* Orange light for button */
-  color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6e3;   /* light neutral background */
   font-family: 'Figtree', sans-serif;
-  font-weight: 600;
 }
 
+/* --- Hero Section --- */
 .hero-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex;                 /* use flex for responsiveness */
+  justify-content: center;       /* center horizontally */
+  align-items: center;           /* center vertically */
   padding: 40px 0;
 }
 
-.image-frame{
-  flex: 0 0 auto;
-  display: inline-block;
-  border: 6px solid #d65727;
-  border-radius: 20px;
-  padding: 0px;
+/* --- Frame around the image --- */
+.image-frame {
+  flex: 0 0 auto;                /* prevents flex stretching */
+  border: 4px solid #d65727;     /* dark orange border */
+  border-radius: 14px;           /* rounded corners */
+  padding: 0;                    /* optional: can add space inside frame */
 }
 
-.hero-image{
+/* --- Hero Image --- */
+.hero-image {
+  width: 50vw;                    /* 50% of the viewport width */
+  max-width: 500px;               /* caps size on large screens */
+  height: auto;                   /* maintain aspect ratio */
   display: block;
-  width: 50%;
-  height: auto;
-  border-radius: 14px;
+  border-radius: 10px;            /* rounded corners of the image itself */
 }
+
 
 
 
