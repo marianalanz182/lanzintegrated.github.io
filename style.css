@@ -109,7 +109,6 @@
   max-width: 300px;             
   height: auto;
   border-radius: 14px;          /* matches hero image */
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);  /* matches hero image */
   background-color: transparent; /* optional: if your GIF has transparency */
 }
 
