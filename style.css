@@ -40,7 +40,16 @@ a.btn-primary {
   font-weight: 600;
 }
 
-a.btn-primary:hover {
+.hero-image {
+  display: block;       /* makes margin auto work */
+  margin: 0 auto;       /* centers horizontally */
+  width: 900px;         /* or whatever width you want */
+  height: 700px;
+}
+
+
+
+  
 
 
 
