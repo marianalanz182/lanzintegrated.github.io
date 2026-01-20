@@ -42,20 +42,5 @@ a.btn-primary {
 
 a.btn-primary:hover {
 
-.hero-section {
-  display: flex;                /* allows horizontal layout if needed */
-  justify-content: center;      /* center the image horizontally */
-  padding: 40px 0;              /* space above and below */
-  max-width: 1200px;            /* maximum width of the whole section */
-  margin: 0 auto;               /* center the section in the page */
-}
 
-.hero-image {
-  width: 50%;                   /* image takes 50% of section width */
-  max-width: 500px;             /* image won’t get bigger than 500px */
-  height: auto;                 /* maintain aspect ratio */
-  border: 5px solid #d65727;   /* orange border */
-  border-radius: 10px;          /* optional rounded corners */
-  display: block;               /* remove small gaps below image */
-}
 
