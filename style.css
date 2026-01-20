@@ -1,4 +1,47 @@
 /* ------------------ */
+/* Navbar / Top bar   */
+/* ------------------ */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;          /* white navbar */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1000;
+  font-family: 'Figtree', sans-serif;  /* match your existing font */
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+  color: #d65727;                     /* match your dark orange theme */
+  text-decoration: none;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #d65727;                     /* hover matches dark orange accent */
+}
+
+
+/* ------------------ */
 /* Section backgrounds */
 /* ------------------ */
 
@@ -7,7 +50,7 @@
   padding: 150px 20px;
   text-align: center;
   color: white;
-  font-family:'Figtree',sans-serif'
+  font-family:'Figtree', sans-serif;
 }
 
 .section-top h2 {
