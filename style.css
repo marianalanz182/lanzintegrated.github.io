@@ -6,7 +6,7 @@
   background-color: #c5c6c7;   /* light purple */
   padding: 100px 20px;
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .hero-image-section {      
@@ -18,8 +18,7 @@
   position: relative;
 }
 
-.section-bottom {
-  background-color: #fdf6e3;   /* off-white */
+.section-bottom { 
   padding: 120px 20px;
   text-align: center;
 }
@@ -32,7 +31,7 @@
   border: 4px solid #d65727;   /* dark orange border */
   border-radius: 18px;
   padding: 0px;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .hero-image {
