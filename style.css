@@ -40,19 +40,24 @@ a.btn-primary {
   font-weight: 600;
 }
 
-.image-frame {
-  display: inline-block;       /* shrink to image size */
-  border: 4px solid #d65727;   /* outer dark orange border */
-  padding: 5px;                /* space for middle light orange border */
-  box-shadow: 0 0 0 4px #2b10069,   /* inner dark orange border */
-              0 0 0 8px #d65727;   /* extra shadow to create double frame */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
 }
 
-.hero-image {
-  display: block;       /* makes margin auto work */
-  margin: 0 auto;       /* centers horizontally */
-  width: 900px;         /* or whatever width you want */
-  height: 600px;
+.image-frame{
+  border: 6px solid #d65727;
+  border-radius: 20px;
+  padding: 6px;
+}
+
+.hero-image{
+  display: block;
+  width: 50%;
+  max-width: 1000px;
+  height: auto;
+  border-radius: 14px;
 }
 
 
