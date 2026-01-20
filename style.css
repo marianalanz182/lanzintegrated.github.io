@@ -1,34 +1,45 @@
-/* --- Reset defaults --- */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #fdf6e3;   /* light background for contrast */
-  font-family: 'Figtree', sans-serif;
+/* ------------------ */
+/* Section backgrounds */
+/* ------------------ */
+
+.section-top {
+  background-color: #553aa0;   /* light purple */
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
 }
 
-/* --- Hero Section --- */
-.hero-section {
-  display: flex;                 /* flex container for centering */
-  justify-content: center;       /* horizontal center */
-  align-items: center;           /* vertical center */
-  padding: 40px 0;
+.hero-image-section {
+  background-color: #fff;       /* white for the image section */
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;            /* pulls image upward to overlap top section */
+  margin-bottom: -80px;         /* pulls image downward slightly if needed */
+  z-index: 1;                   /* ensures it visually sits above sections */
+  position: relative;
 }
 
-/* --- Frame around the image --- */
+.section-bottom {
+  background-color: #fdf6e3;   /* off-white */
+  padding: 120px 20px;
+  text-align: center;
+}
+
+/* ----------------- */
+/* Image and frame   */
+/* ----------------- */
+
 .image-frame {
-  flex: 0 0 auto;                /* prevent flex stretching */
-  border: 4px solid #d65727;     /* dark orange outer line */
-  border-radius: 16px;           /* rounded corners of frame */
-  padding: 0px;                 /* space between frame and image */
-  box-shadow: 0 0 0 4px #d67522; /* optional inner “shadow” for double-line frame effect */
-  background-color: #fff;        /* optional: makes the frame pop */
+  border: 4px solid #d65727;   /* dark orange border */
+  border-radius: 18px;
+  padding: 10px;
+  background-color: #fff;
 }
 
-/* --- Hero Image --- */
 .hero-image {
   display: block;
-  width: 50vw;                    /* 50% of viewport width */
-  max-width: 500px;               /* caps size on large screens */
-  height: auto;                   /* maintain aspect ratio */
-  border-radius: 12px;            /* rounded corners for the image itself */
+  width: 70vw;                  /* large image size */
+  max-width: 700px;             /* caps max size */
+  height: auto;
+  border-radius: 14px;
 }
