@@ -19,7 +19,7 @@ body {
   flex: 0 0 auto;                /* prevent flex stretching */
   border: 4px solid #d65727;     /* dark orange outer line */
   border-radius: 16px;           /* rounded corners of frame */
-  padding: 10px;                 /* space between frame and image */
+  padding: 0px;                 /* space between frame and image */
   box-shadow: 0 0 0 4px #d67522; /* optional inner “shadow” for double-line frame effect */
   background-color: #fff;        /* optional: makes the frame pop */
 }
