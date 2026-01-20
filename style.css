@@ -58,14 +58,18 @@
   margin:0;
 }
 
-.hero-image-section {      
+.hero-image-section {
   display: flex;
-  justify-content: center;
-  margin-top: -80px;            /* pulls image upward to overlap top section */
-  margin-bottom: -80px;         /* pulls image downward slightly if needed */
-  z-index: 1;                   /* ensures it visually sits above sections */
+  justify-content: center;       /* centers the content horizontally */
+  align-items: center;           /* vertically aligns image and GIF */
+  gap: 40px;                     /* space between hero image and GIF */
+  margin-top: -80px;
+  margin-bottom: -80px;
+  z-index: 1;
   position: relative;
+  flex-wrap: wrap;               /* allows stacking on small screens */
 }
+
 
 .section-bottom { 
   padding: 120px 20px;
@@ -91,3 +95,21 @@
   height: auto;
   border-radius: 14px;
 }
+
+/* GIF next to the hero image */
+.gif-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-gif {
+  display: block;
+  width: 30vw;                  /* slightly smaller than hero image */
+  max-width: 300px;             
+  height: auto;
+  border-radius: 14px;          /* matches hero image */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);  /* matches hero image */
+  background-color: transparent; /* optional: if your GIF has transparency */
+}
+
