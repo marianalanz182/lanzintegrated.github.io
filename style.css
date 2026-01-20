@@ -40,11 +40,19 @@ a.btn-primary {
   font-weight: 600;
 }
 
+.image-frame {
+  display: inline-block;       /* shrink to image size */
+  border: 4px solid #d65727;   /* outer dark orange border */
+  padding: 5px;                /* space for middle light orange border */
+  box-shadow: 0 0 0 4px #2b10069,   /* inner dark orange border */
+              0 0 0 8px #d65727;   /* extra shadow to create double frame */
+}
+
 .hero-image {
   display: block;       /* makes margin auto work */
   margin: 0 auto;       /* centers horizontally */
   width: 900px;         /* or whatever width you want */
-  height: 700px;
+  height: 600px;
 }
 
 
